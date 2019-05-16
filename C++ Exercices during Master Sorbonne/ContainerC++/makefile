@@ -75,6 +75,12 @@ Stack: Stack.o
 
 Stack.o: Stack.cpp 
 	g++ -std=c++0x -g -c -w Stack.cpp
+	
+String: String.o
+	g++ -g String.o -o String.exe
+
+String.o: String.cpp 
+	g++ -std=c++0x -g -c -w String.cpp
 
 clean: 
 	rm -f *.o *.exe
