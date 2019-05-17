@@ -14,6 +14,7 @@ public:
 	Etudiant();
 	Etudiant(string name,int note);
 	void afficher();
+	bool operator > (const Etudiant &e)const;
 };
 
 Etudiant::Etudiant(string name,int note){
@@ -28,6 +29,11 @@ void Etudiant::afficher(){
 		cout<<it->first<<" : "<<it->second<<endl;
 	}
 }
+
+bool Etudiant::operator >(const Etudiant &e)const{
+	return note>e.note;
+}
+
 struct compare{
 bool operator() (Etudiant e1,Etudiant e2){
 	return e1.note>e2.note;
@@ -47,6 +53,10 @@ int main(){
 		Etudiant e = etudiants[i];
 		e.afficher();
 	}
+	Etudiant E = max(e1,e2);
+	Etudiant i = min(e1,e2);
+	cout<<E.name<<endl;
+	cout<<i.name<<endl;
 	return 0;
 }
 
