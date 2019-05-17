@@ -48,15 +48,16 @@ int main(){
 	etudiants.push_back(e1);
 	etudiants.push_back(e2);
 	etudiants.push_back(e3);
+	//sort()
 	sort(etudiants.begin(),etudiants.end(),compare());
 	for(int i=0;i<etudiants.size();++i){
 		Etudiant e = etudiants[i];
 		e.afficher();
 	}
-	Etudiant E = max(e1,e2);
-	Etudiant i = min(e1,e2);
-	cout<<E.name<<endl;
-	cout<<i.name<<endl;
+	//swap()
+	swap(e1,e2);
+	cout<<e1.name<<endl;
+	cout<<e2.name<<endl;
 	return 0;
 }
 

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <algorithm>//sort
+#include <algorithm>//sort(),reverse()
 using namespace std;
 
 template <typename T>
@@ -24,11 +24,15 @@ bool ascendingPourString(string s1,string s2){
 }
 
 int main(){
-	vector<string>nom = {"Falcao","Robben","Makino","Weghost","Klassen"};
+	vector<string>nom;
+	nom={"Falcao","Robben","Makino","Weghost","Klassen"};
+	reverse(nom.begin(),nom.end());
+	pprint(nom);
 	vector<string>::iterator iter = nom.begin();
 	sort(nom.begin(),nom.end(),ascendingPourString);
 	pprint(nom);
-	vector<int>numero = {1,2,3,4,5};
+	vector<int>numero;
+	numero = {1,2,3,4,5};
 	pprint(numero);
 	pprint(nom);
 	pprint(&nom);
@@ -39,7 +43,6 @@ int main(){
 	numero.insert(numero.begin()+2,3);
 	numero.insert(numero.begin()+3,4);
 	pprint(numero);
-
 	return 0;
 }
 

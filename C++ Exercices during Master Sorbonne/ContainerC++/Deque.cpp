@@ -51,6 +51,8 @@ int main(){
 	pprint(d2);//4 4 4 4 4 4 2
 	d2.pop_front();//supprimer le premier
 	pprint(d2);//4 4 4 4 4 2
+	reverse(d2.begin(),d2.end());
+	pprint(d2);
 }
 
 

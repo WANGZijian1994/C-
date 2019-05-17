@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.toolchain.gnu.macosx.base.999560570/GCC/delimiter=\:
+environment/project/cdt.managedbuild.toolchain.gnu.macosx.base.999560570/GCC/operation=append
+environment/project/cdt.managedbuild.toolchain.gnu.macosx.base.999560570/GCC/value=/Library/Developer/CommandLineTools/usr/bin
+environment/project/cdt.managedbuild.toolchain.gnu.macosx.base.999560570/append=true
+environment/project/cdt.managedbuild.toolchain.gnu.macosx.base.999560570/appendContributed=true
