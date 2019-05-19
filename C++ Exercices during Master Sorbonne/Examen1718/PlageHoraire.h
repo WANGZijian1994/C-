@@ -12,14 +12,15 @@ class PlageHoraire{
 public:
 	string jour;
 	string activites;
+	string name;
 	int debut;
 	int final;
 	vector<int>horaires;
 	map<string,string>taches;
-	map<map<string,string>,vector<int>>total;
 	PlageHoraire();
-	PlageHoraire(string jour,int debut,int final,string activites);
-	void afficher();
+	PlageHoraire(string name,string jour,int debut,int final,string activites);
+	void changerHoraire(int i,int j);
+	void changerJour(string s);
 };
 
 
