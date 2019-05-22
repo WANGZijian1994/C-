@@ -82,5 +82,11 @@ String: String.o
 String.o: String.cpp 
 	g++ -std=c++0x -g -c -w String.cpp
 
+TimerInsertion: TimerInsertion.o
+	g++ -g TimerInsertion.o -o TimerInsertion.exe
+
+TimerInsertion.o: TimerInsertion.cpp 
+	g++ -std=c++0x -g -c -w TimerInsertion.cpp
+
 clean: 
 	rm -f *.o *.exe
