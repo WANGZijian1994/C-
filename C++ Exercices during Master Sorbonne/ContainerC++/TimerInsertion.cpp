@@ -1,12 +1,7 @@
-#include <deque>
-#include <list>
-#include <time.h>
-#include <iostream>
-using namespace std;
-
 #include <iostream>
 #include <deque>
 #include <list>
+#include <vector>
 #include <time.h>
 using namespace std;
 
@@ -34,10 +29,22 @@ int main(){
 	//Insertion pour ces deux conteneurs :
 	clock_t tDeque=clock();
 	d.insert(++d.begin(),3);
-	cout<<"Insertion for deque : "<<(clock() - tDeque) * 1.0 / CLOCKS_PER_SEC * 1000<<endl;
+	cout<<"Time for Insertion of an element for deque : "<<(clock() - tDeque) * 1.0 / CLOCKS_PER_SEC * 1000<<endl;
 	clock_t tList=clock();
 	l.insert(++l.begin(),3);
-	cout<<"Insertion for list : "<<(clock() - tDeque) * 1.0 / CLOCKS_PER_SEC * 1000<<endl;
+	cout<<"Time for Insertion of an element for list : "<<(clock() - tList) * 1.0 / CLOCKS_PER_SEC * 1000<<endl;
+	//l.insert(l.begin()+2,4,2);
+	clock_t tDeque1=clock();
+	d.insert(d.begin()+3,4,2);
+	cout<<"Time for Insertion of 4 elements for deque : "<<(clock() - tDeque1) * 1.0 / CLOCKS_PER_SEC * 1000<<endl;
+	list<int>::iterator itl = ++l.begin();
+	vector<int>v;
+	for(int i=1;i<5;++i){
+		v.push_back(2);
+	}
+	clock_t tList1=clock();
+	l.insert(++itl,v.begin(),v.end());
+	cout<<"Time for Insertion of 4 elements for list : "<<(clock() - tList1) * 1.0 / CLOCKS_PER_SEC * 1000<<endl;
 	pprintDeque(d);
 	pprintList(l);
 }
