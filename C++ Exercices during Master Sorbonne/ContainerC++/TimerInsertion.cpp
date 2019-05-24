@@ -7,7 +7,7 @@ using namespace std;
 
 void pprintDeque(deque<int>d){
 	for(int i = 0;i<d.size();++i){
-		cout<<d.at(i)<<" "<<endl;
+		cout<<d.at(i)<<" ";
 	}cout<<endl;
 }
 
@@ -33,7 +33,7 @@ int main(){
 	clock_t tList=clock();
 	l.insert(++l.begin(),3);
 	cout<<"Time for Insertion of an element for list : "<<(clock() - tList) * 1.0 / CLOCKS_PER_SEC * 1000<<endl;
-	//l.insert(l.begin()+2,4,2);
+	//l.insert(l.begin()+2,4,2); Pour list ce n'est pas comme ça en C++.
 	clock_t tDeque1=clock();
 	d.insert(d.begin()+3,4,2);
 	cout<<"Time for Insertion of 4 elements for deque : "<<(clock() - tDeque1) * 1.0 / CLOCKS_PER_SEC * 1000<<endl;
