@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 //STL:conteneur Iterateur Algorithme
-//List n'est pas acces direct. enchaînée, element par element un element donne fonction rapide, fonction en acces sequentiel.
+//List n'est pas acces direct. enchaï¿½nï¿½e, element par element un element donne fonction rapide, fonction en acces sequentiel.
 //deque est rapide. bloc par bloc
 
 //erase() est moins rapide que remove()
@@ -54,6 +54,19 @@ int main(){
 	cout<<"Iterator : "<<*it2<<endl;
 	T3.push_back(7);
 	cout<<"Iterator : "<<*it2<<endl;
+	cout<<"--------------------------------"<<endl;
+	cout<<"Pour Vector, L'intÃ©rateur va suivre toujours l'index de la valeur attribuÃ©e jusqu'Ã  la disparition de cette valeur."<<endl;
+	vector<int>v1;
+	vector<int>::iterator it1;
+	for(int i = 100;i<105;++i){
+		v1.push_back(i);
+	}
+	pprint(v1);
+	it1=v1.begin()+2;
+	cout<<*it1<<endl;
+	v1.insert(v1.begin()+1,17);
+	pprint(v1);
+	cout<<*it1<<endl;
 }
 
 

@@ -76,6 +76,12 @@ Stack: Stack.o
 Stack.o: Stack.cpp 
 	g++ -std=c++0x -g -c -w Stack.cpp
 	
+IterateurPourListetPourVector: IterateurPourListetPourVector.o
+	g++ -g IterateurPourListetPourVector.o -o IterateurPourListetPourVector.exe
+
+IterateurPourListetPourVector.o: IterateurPourListetPourVector.cpp 
+	g++ -std=c++0x -g -c -w IterateurPourListetPourVector.cpp
+
 String: String.o
 	g++ -g String.o -o String.exe
 
