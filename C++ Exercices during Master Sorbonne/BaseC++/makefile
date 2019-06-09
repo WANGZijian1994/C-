@@ -128,6 +128,12 @@ Sort: Sort.o
 Sort.o: Sort.cpp 
 	g++ -std=c++0x -g -c -w Sort.cpp
 
+Febonacci: Febonacci.o
+	g++ -g Febonacci.o -o Febonacci.exe
+
+Febonacci.o: Febonacci.cpp 
+	g++ -std=c++0x -g -c -w Febonacci.cpp
+
 StringReverse: StringReverse.o
 	g++ -g StringReverse.o -o StringReverse.exe
 

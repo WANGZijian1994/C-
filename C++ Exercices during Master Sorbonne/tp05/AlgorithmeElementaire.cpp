@@ -12,8 +12,10 @@ void pprintList(list<int>& l){
 }
 
 int main(){
-	list<int>l1 = {1,3,8,0,100,34};
-	list<int>l2 = {98,87,34,25,2,5};
+	list<int>l1;
+	l1= {1,3,8,0,100,34};
+	list<int>l2;
+	l2 = {98,87,34,25,2,5};
 	cout<<"La liste l1 est de : "<<endl;
 	pprintList(l1);
 	cout<<"La liste l2 est de : "<<endl;

@@ -76,6 +76,12 @@ Stack: Stack.o
 Stack.o: Stack.cpp 
 	g++ -std=c++0x -g -c -w Stack.cpp
 	
+EfficencyOfOperationsForDifferentContainer: EfficencyOfOperationsForDifferentContainer.o
+	g++ -g EfficencyOfOperationsForDifferentContainer.o -o EfficencyOfOperationsForDifferentContainer.exe
+
+EfficencyOfOperationsForDifferentContainer.o: EfficencyOfOperationsForDifferentContainer.cpp 
+	g++ -std=c++0x -g -c -w EfficencyOfOperationsForDifferentContainer.cpp
+	
 IterateurPourListetPourVector: IterateurPourListetPourVector.o
 	g++ -g IterateurPourListetPourVector.o -o IterateurPourListetPourVector.exe
 
