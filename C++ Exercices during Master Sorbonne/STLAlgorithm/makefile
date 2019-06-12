@@ -6,6 +6,12 @@ Algorithm: Algorithm.o
 
 Algorithm.o: Algorithm.cpp 
 	g++ -std=c++0x -g -c -w Algorithm.cpp
+	
+BubbleSort: BubbleSort.o
+	g++ -g BubbleSort.o -o BubbleSort.exe
+
+BubbleSort.o: BubbleSort.cpp 
+	g++ -std=c++0x -g -c -w BubbleSort.cpp
 
 BinarySearch: BinarySearch.o
 	g++ -g BinarySearch.o -o BinarySearch.exe
